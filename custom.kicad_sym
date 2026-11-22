@@ -210,7 +210,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin no_connect line
 				(at 1.27 2.54 0)
 				(length 2.54)
 				(hide yes)
@@ -266,7 +266,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at -1.27 -15.24 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -284,7 +284,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at -1.27 -15.24 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -376,9 +376,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 1.27 -15.24 90)
 				(length 2.54)
-				(hide yes)
 				(name "THERMAL_PAD"
 					(effects
 						(font
@@ -434,7 +433,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/bq27220"
+		(property "Datasheet" "https://www.ti.com/lit/gpn/BQ27546-G1"
 			(at -0.254 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)

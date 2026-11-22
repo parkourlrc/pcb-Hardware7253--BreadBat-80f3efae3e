@@ -214,6 +214,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.15,
         0.2,
         0.25,
@@ -581,7 +582,7 @@
       "method": 0,
       "sort_order": 1
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "Manufacture/breadbat.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -749,7 +750,7 @@
         "uuid": "79725204-d1dd-4a27-8abd-729060af57b5"
       }
     ],
-    "used_designators": "#PWR1-53,#PWR84-85,#PWR87-93,#PWR198-227,BT1,C1-18,C49-53,C98-105,C107,C109,C111,D1-4,J1-4,JP1,L1-6,Q1,Q3,R1-17,R109-122,TP1,U1-6,U9-10,U17,U19-20",
+    "used_designators": "#PWR1-54,#PWR84-85,#PWR87-93,#PWR198-227,BT1,C1-18,C49-53,C98-105,C107,C109,C111,D1-5,J1-5,JP1,L1-6,Q1,Q3,R1-17,R109-122,TP1,U1-6,U9-10,U17,U19-20",
     "variants": []
   },
   "sheets": [
