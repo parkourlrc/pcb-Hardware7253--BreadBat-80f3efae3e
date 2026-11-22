@@ -4488,7 +4488,7 @@
 		)
 		(uuid "0033360c-fdde-4e9c-abb2-ecb5d6f43455")
 	)
-	(text "For 2A charge current choose\nR = 40,000 / 2 = 20,000"
+	(text "For 1.5A charge current choose\nR = 40,000 / 1.5 = 26.6k"
 		(exclude_from_sim no)
 		(at 176.276 143.002 0)
 		(effects
@@ -4498,9 +4498,9 @@
 		)
 		(uuid "0069e957-a58b-4ead-a9f5-02765e1f9d42")
 	)
-	(text "1.5A max load\n3.85A peak inductor current"
+	(text "1.35A max load\n3.52A peak inductor current\n2.5A valley current"
 		(exclude_from_sim no)
-		(at 128.778 168.402 0)
+		(at 129.54 169.164 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5770,6 +5770,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 111.76) (xy 187.96 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b859918-df4d-4e80-b1f3-3c523e1c576a")
+	)
+	(wire
+		(pts
 			(xy 69.85 105.41) (xy 69.85 92.71)
 		)
 		(stroke
@@ -6350,16 +6360,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 111.76) (xy 187.96 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f1d36a8-8881-450c-b312-a934d19bd579")
-	)
-	(wire
-		(pts
 			(xy 105.41 82.55) (xy 102.87 82.55)
 		)
 		(stroke
@@ -6367,16 +6367,6 @@
 			(type default)
 		)
 		(uuid "a37ddb9c-d99d-4d82-b149-fe07a62800f5")
-	)
-	(wire
-		(pts
-			(xy 187.96 121.92) (xy 187.96 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a650c986-f78b-4b30-afc1-7e9de91f8cdc")
 	)
 	(wire
 		(pts
@@ -7341,7 +7331,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "045261f0-50d9-46b8-8916-4ace00161acf")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR028"
 			(at 326.39 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -7401,7 +7391,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR029")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -7418,7 +7408,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "077ab2f1-5091-4e2c-b562-b201d0ed67ca")
-		(property "Reference" "C10"
+		(property "Reference" "C9"
 			(at 180.34 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7493,7 +7483,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C10")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7510,7 +7500,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0812275b-6819-49ef-8b45-cbdb13c104e5")
-		(property "Reference" "R12"
+		(property "Reference" "R11"
 			(at 346.964 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7585,7 +7575,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R12")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7602,7 +7592,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08957f13-6560-46ed-878b-b0be8ce3e222")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 121.92 196.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7677,7 +7667,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -7694,7 +7684,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "096d75d5-54a5-49c4-9260-421625e9632f")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR025"
 			(at 345.44 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7754,7 +7744,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR026")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7761,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a2faae8-d447-400c-8f1b-ae8a5d41972d")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR032"
 			(at 266.7 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -7831,7 +7821,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR033")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7848,7 +7838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c3b29c6-badd-45b0-84bd-08fb7c453845")
-		(property "Reference" "C13"
+		(property "Reference" "C12"
 			(at 269.24 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7923,99 +7913,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 187.96 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0d5bb66e-4d98-4d80-9253-08134bb73f0f")
-		(property "Reference" "R7"
-			(at 189.484 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 189.484 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 186.182 118.11 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 187.96 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part" "C25744"
-			(at 187.96 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0f329bfc-0f9d-4b97-bffd-73832cae012c")
-		)
-		(pin "1"
-			(uuid "234b7b5c-4cd1-4c88-9ded-4421d63dc7d3")
-		)
-		(instances
-			(project "breadbat"
-				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R7")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -8032,7 +7930,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0dbb4977-02a5-4a6f-af68-ce3c63aa3918")
-		(property "Reference" "R16"
+		(property "Reference" "R15"
 			(at 159.004 203.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8107,7 +8005,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R16")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -8124,7 +8022,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "119bb895-d8bf-4412-abba-06044510ed30")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR026"
 			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8184,7 +8082,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR027")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -8392,7 +8290,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "17b5f10f-b870-4720-9cea-603ec115101a")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 199.644 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8467,7 +8365,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -8576,7 +8474,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1bff5f5a-6d2e-4323-b017-1a1d085a8c3a")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR030"
 			(at 40.64 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -8636,7 +8534,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR031")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8905,7 +8803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "26323072-e5b8-4d45-9af8-2198520dbf61")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR033"
 			(at 144.78 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8965,7 +8863,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR034")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -9060,7 +8958,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27e2e5f8-17cf-4c2d-b980-5b1d910af729")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR041"
 			(at 284.48 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -9120,7 +9018,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR042")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -9137,7 +9035,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30107d8d-8d51-49f6-be66-cdeec98825bd")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR013"
 			(at 321.31 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9197,7 +9095,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR014")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9215,7 +9113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31570940-4709-44d0-b19c-5af313d8830d")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR047"
 			(at 346.71 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -9275,7 +9173,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR054")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -9292,7 +9190,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "317fbc70-212b-4024-91bd-616d23094e91")
-		(property "Reference" "C18"
+		(property "Reference" "C17"
 			(at 181.61 200.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9367,7 +9265,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C18")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -9511,7 +9409,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35fb0dac-eb28-48b2-98a1-fbaf8100022a")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 300.99 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9586,7 +9484,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -9899,7 +9797,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3cb5aad6-4c65-470f-b3a8-d1da6181c409")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR029"
 			(at 341.63 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9959,7 +9857,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR030")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -10053,7 +9951,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ee9d856-fb6f-4e79-b25a-1d9dea22fe87")
-		(property "Reference" "R17"
+		(property "Reference" "R16"
 			(at 92.964 209.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10128,7 +10026,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R17")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -10373,7 +10271,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44c8d4d5-a9d5-4602-8b12-8fb959751dd4")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011"
 			(at 182.88 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10433,7 +10331,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -10450,7 +10348,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "465b2ad0-a1ad-4020-95f0-97aa6e8da1d9")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 266.7 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -10510,7 +10408,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -10528,7 +10426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47b55eca-7d4c-467b-81d8-41cb1fa90cb3")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR046"
 			(at 334.01 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -10588,7 +10486,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR047")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10605,7 +10503,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49b85d8d-41ac-4a7c-b2d0-18cb3811b6e4")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 375.92 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10680,7 +10578,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10697,7 +10595,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "507767ce-8129-42a7-8def-5f61d9f89547")
-		(property "Reference" "C7"
+		(property "Reference" "C6"
 			(at 246.38 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10772,7 +10670,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C7")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -10904,7 +10802,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "583b11ea-6216-4f9e-8000-7b8a254b6746")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR012"
 			(at 275.59 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -10964,7 +10862,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR013")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -10981,7 +10879,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5994901d-d0d0-4392-871a-310c3ead4944")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 335.28 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -11041,7 +10939,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR016")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11149,7 +11047,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "62e88ebf-de32-43fe-b476-3bc60bcd24e0")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR021"
 			(at 187.96 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11209,7 +11107,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR023")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -11226,7 +11124,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "640ec33b-ae12-4d35-a809-23bdff927cf9")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR035"
 			(at 215.9 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -11286,7 +11184,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR036")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -11303,7 +11201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64d707c5-e8c9-486e-8ca6-2a242d42d102")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR034"
 			(at 179.07 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -11363,7 +11261,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR035")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -11457,7 +11355,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a14d68e-ea87-4488-8f12-68877acc542a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR018"
 			(at 264.16 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -11517,7 +11415,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR019")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -11534,7 +11432,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ab527ea-7708-40d4-8ce2-feeae1963617")
-		(property "Reference" "R13"
+		(property "Reference" "R12"
 			(at 285.75 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11609,7 +11507,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R13")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -11626,7 +11524,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b27c923-8ca8-4ad9-b77a-1409379781e1")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR024"
 			(at 226.06 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11686,7 +11584,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR020")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -11703,7 +11601,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d0b3cb4-2321-4125-bfdb-b393829187fb")
-		(property "Reference" "C16"
+		(property "Reference" "C15"
 			(at 105.41 196.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11778,7 +11676,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C16")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -11887,7 +11785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7acc5652-7fbc-4798-a677-4fbe4ed31466")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR043"
 			(at 215.9 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -11947,7 +11845,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR044")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -11964,7 +11862,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7cb8c81f-4b08-4cd3-85c4-98774e5d68c5")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR038"
 			(at 241.3 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -12024,7 +11922,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR039")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -12041,7 +11939,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e0e1565-c4aa-4d8c-9b1a-04f31433d739")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 208.534 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12116,7 +12014,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -12133,7 +12031,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8769f6ed-3a33-40a0-85a9-f0a8798fdfd6")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR039"
 			(at 254 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -12193,7 +12091,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR040")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -12210,7 +12108,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88fb7dd3-6103-4323-aa43-af7d44fc28a7")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR020"
 			(at 177.8 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -12270,7 +12168,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -12395,7 +12293,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8acb363a-276c-41b3-91a8-4f610c3d22ac")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR044"
 			(at 309.88 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -12455,7 +12353,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR045")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -12795,7 +12693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92d160f5-a5c9-4890-a134-fb18cc6a5333")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR010"
 			(at 115.57 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -12855,7 +12753,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR011")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -12872,7 +12770,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "976dbcee-ee6e-4053-b82d-3f8f17cee8fe")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR023"
 			(at 207.01 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -12932,7 +12830,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR025")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -13043,7 +12941,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d16001e-b84b-41eb-a434-450169a53c18")
-		(property "Reference" "R14"
+		(property "Reference" "R13"
 			(at 159.004 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13118,7 +13016,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R14")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -13136,7 +13034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e586673-fe8f-48a0-b3df-c785c5e9f976")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 69.85 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -13196,7 +13094,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -13213,7 +13111,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f585c09-4910-45aa-9a95-06ce61737b52")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR022"
 			(at 198.12 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -13273,7 +13171,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR024")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -13380,7 +13278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a26e5bf1-e8aa-4cfd-8b54-c5cba8309ba3")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR014"
 			(at 36.83 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -13440,7 +13338,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR015")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -13458,7 +13356,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a86b4d41-3789-4046-83a8-b4d7347459ef")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR027"
 			(at 306.07 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13518,7 +13416,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR028")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -13804,7 +13702,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aac93594-aca7-48c8-a69e-524806673a07")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR037"
 			(at 119.38 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -13864,7 +13762,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR038")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -13881,7 +13779,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac9a6925-5a5d-4c8f-b3e8-128cbeb792e5")
-		(property "Reference" "C15"
+		(property "Reference" "C14"
 			(at 218.44 193.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13956,7 +13854,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C15")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -13973,7 +13871,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1a0ebf0-6072-4456-ae11-0e9ee4d330f1")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR019"
 			(at 166.37 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -14033,7 +13931,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR021")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -14143,7 +14041,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5eaf5c8-f714-43a3-b94c-a8f4053dfe3c")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR036"
 			(at 40.64 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -14203,7 +14101,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR037")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -14330,7 +14228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "baf5dadc-9a5e-40e7-906b-cbb726a93366")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 62.23 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -14390,7 +14288,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -14484,7 +14382,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c35dd02f-b7d8-4cc7-9459-449bbc05f3b2")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR042"
 			(at 144.78 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -14544,7 +14442,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR043")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -14730,7 +14628,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c737a62a-abd6-47c7-bef2-90e878742719")
-		(property "Reference" "C8"
+		(property "Reference" "C7"
 			(at 266.7 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14805,7 +14703,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C8")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -14822,7 +14720,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8e1a4b7-d7ce-41e3-93a6-45863bf9ea18")
-		(property "Reference" "R8"
+		(property "Reference" "R7"
 			(at 337.82 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14895,7 +14793,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R8")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -15020,7 +14918,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd133768-b1a9-479f-bd8a-50e3049f2664")
-		(property "Reference" "R9"
+		(property "Reference" "R8"
 			(at 189.484 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15031,7 +14929,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "27k"
 			(at 189.484 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15075,7 +14973,7 @@
 				)
 			)
 		)
-		(property "LCSC part" "C25744"
+		(property "LCSC part" "C2933084"
 			(at 187.96 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -15095,7 +14993,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R9")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -15112,7 +15010,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6394abf-7435-4e93-98c4-583bf90ce223")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR045"
 			(at 323.85 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -15172,7 +15070,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR046")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -15281,7 +15179,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6462c84-bb16-4159-ae96-5a222524ce38")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR031"
 			(at 241.3 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -15341,7 +15239,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR032")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -15831,7 +15729,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee7aa615-3699-4bf1-95c1-c491d3f59eb9")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR08"
 			(at 298.45 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -15891,7 +15789,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -15908,7 +15806,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eeb8a756-a6a0-4e21-85fa-2cbf7c7ce87e")
-		(property "Reference" "R15"
+		(property "Reference" "R14"
 			(at 92.964 196.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15983,7 +15881,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "R15")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -16000,7 +15898,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f1472305-48cd-47fe-b595-5073400a588f")
-		(property "Reference" "C12"
+		(property "Reference" "C11"
 			(at 243.84 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16075,7 +15973,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C12")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -16298,7 +16196,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f798efe1-8733-40b2-be64-95840e5da9f4")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 43.18 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16373,7 +16271,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -16390,7 +16288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8f48ea0-2232-4dff-a091-c0832760212d")
-		(property "Reference" "C9"
+		(property "Reference" "C8"
 			(at 168.91 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16465,7 +16363,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C9")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -16482,7 +16380,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f97279fb-23b2-4b5a-b6f6-6731ccb14492")
-		(property "Reference" "C14"
+		(property "Reference" "C13"
 			(at 147.32 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16557,7 +16455,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "C14")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -16574,7 +16472,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fc7281f6-d341-4e90-809e-975fcb923eb8")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 373.38 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -16634,7 +16532,7 @@
 		(instances
 			(project "breadbat"
 				(path "/79725204-d1dd-4a27-8abd-729060af57b5"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
